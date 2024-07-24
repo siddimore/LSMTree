@@ -1,4 +1,4 @@
-#include"Memtable.h"
+#include "Memtable.h"
 
 void Memtable::insert(const std::string& key, const std::string& value) {
     data[key] = value;
