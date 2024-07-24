@@ -33,19 +33,19 @@ C++17 compatible compiler (e.g., g++, clang++)
 
 ## Steps
 1. Clone Repo
-git clone https://github.com/your-repo/LSMTreeProject.git
-cd LSMTreeProject
+git clone https://github.com/your-repo/LSMTreeProject.git  
+cd LSMTreeProject  
 
-2. Generate Build files
-mkdir build
-cd build
-cmake ..
+2. Generate Build files  
+mkdir build  
+cd build  
+cmake ..  
 
 3. Compile Project
-cmake --build .
+cmake --build .  
 
-4. Run Executable
-./LSMTreeProject
+4. Run Executable  
+./LSMTreeProject  
 
 
 
