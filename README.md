@@ -1,20 +1,19 @@
 # NaiveSSTable
 ### Project Overview
-The NaiveSSTableProject is a C++17 implementation of a Log-Structured Merge (LSM) Tree with SSTable (Sorted String Table) storage for key-value storage and retrieval. The project demonstrates a simple yet effective way to handle large volumes of write operations and maintain efficient read performance by leveraging the LSM Tree data structure.
+The NaiveSSTableProject is a C++17 implementation with SSTable (Sorted String Table) storage for key-value storage and retrieval. The project demonstrates a simple yet effective way to handle large volumes of write operations and maintain efficient read performance.
 
 ### Purpose
-The purpose of this project is to provide a basic implementation of an LSM Tree, showcasing the following features:
+The purpose of this project is to provide a basic implementation of an SSTable, showcasing the following features:
 
 Efficient Write Operations: Batching writes in memory (Memtable) and periodically flushing to disk (SSTable) to maintain performance.
-Efficient Read Operations: Using sorted data structures and binary search for quick lookups, complemented by Bloom Filters to reduce unnecessary disk reads.
-Concurrency: Ensuring thread-safe operations for concurrent read and write access using mutexes.
+Efficient Read Operations: Using sorted data structures and binary search for quick lookups.
 
 ### Features
 Memtable: An in-memory table for storing key-value pairs temporarily before flushing to disk.
 SSTable: An immutable, on-disk table that stores sorted key-value pairs for efficient querying.
 
 ### Project Structure
-LSMTreeProject/
+NaiveSSTableProject/
 ├── CMakeLists.txt
 ├── main.cpp
 ├── Memtable.h
