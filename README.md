@@ -1,6 +1,6 @@
 # NaiveSSTable
 ### Project Overview
-The LSMTreeProject is a C++17 implementation of a Log-Structured Merge (LSM) Tree with SSTable (Sorted String Table) storage for key-value storage and retrieval. The project demonstrates a simple yet effective way to handle large volumes of write operations and maintain efficient read performance by leveraging the LSM Tree data structure.
+The NaiveSSTableProject is a C++17 implementation of a Log-Structured Merge (LSM) Tree with SSTable (Sorted String Table) storage for key-value storage and retrieval. The project demonstrates a simple yet effective way to handle large volumes of write operations and maintain efficient read performance by leveraging the LSM Tree data structure.
 
 ### Purpose
 The purpose of this project is to provide a basic implementation of an LSM Tree, showcasing the following features:
@@ -12,8 +12,6 @@ Concurrency: Ensuring thread-safe operations for concurrent read and write acces
 ### Features
 Memtable: An in-memory table for storing key-value pairs temporarily before flushing to disk.
 SSTable: An immutable, on-disk table that stores sorted key-value pairs for efficient querying.
-Bloom Filter: A probabilistic data structure used to quickly test whether an element is a member of a set, reducing disk accesses.
-Concurrency: Thread-safe insertions and queries using std::mutex and std::shared_mutex.
 
 ### Project Structure
 LSMTreeProject/
@@ -23,8 +21,8 @@ LSMTreeProject/
 ├── Memtable.cpp
 ├── SSTable.h
 ├── SSTable.cpp
-├── LSMTree.h
-└── LSMTree.cpp
+├── SSTableManager.h
+└── SSTableManager.cpp
 
 ### Build and Run instructions
 Prerequisites
@@ -33,8 +31,8 @@ C++17 compatible compiler (e.g., g++, clang++)
 
 ## Steps
 1. Clone Repo
-git clone https://github.com/your-repo/LSMTreeProject.git  
-cd LSMTreeProject  
+git clone https://github.com/your-repo/NaiveSSTableProject.git  
+cd NaiveSSTableProject  
 
 2. Generate Build files  
 mkdir build  
@@ -45,7 +43,7 @@ cmake ..
 cmake --build .  
 
 4. Run Executable  
-./LSMTreeProject  
+./NaiveSSTableProject  
 
 
 
