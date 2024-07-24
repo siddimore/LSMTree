@@ -1,4 +1,4 @@
-# LSMTree
+# NaiveSSTable
 ### Project Overview
 The LSMTreeProject is a C++17 implementation of a Log-Structured Merge (LSM) Tree with SSTable (Sorted String Table) storage for key-value storage and retrieval. The project demonstrates a simple yet effective way to handle large volumes of write operations and maintain efficient read performance by leveraging the LSM Tree data structure.
 
