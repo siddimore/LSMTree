@@ -44,6 +44,7 @@ cmake --build .
 4. Run Executable  
 ./NaiveSSTableProject  
 
-
+## Reference
+Designing Data-Intensive Applications
 
 
